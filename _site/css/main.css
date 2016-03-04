@@ -455,9 +455,6 @@ pre {
 /**
  * Page content
  */
-.page-content {
-  padding: 30px 0; }
-
 .page-heading {
   font-size: 20px; }
 
@@ -657,7 +654,8 @@ h2 {
     min-width: 100% !important;
     display: block;
     font-size: 30px;
-    padding: 20px 30px; }
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.5); }
 
 /**
  * Syntax highlighting styles
