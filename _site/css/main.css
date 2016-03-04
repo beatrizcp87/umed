@@ -608,7 +608,8 @@ h2 {
   padding: 0 3%;
   width: 100%;
   margin: 20px 0 10px 0;
-  text-align: center; }
+  text-align: center;
+  background-position: center 10%; }
   .steps ul li {
     content: " ";
     display: inline-block;
@@ -622,7 +623,7 @@ h2 {
     height: 270px;
     text-align: center;
     box-shadow: 0px 2px 2px #999;
-    background-position: center 10% !important; }
+    background-position: center 10%; }
     .steps ul li.step1 {
       background: url("../images/doctor2.png") no-repeat #fff; }
     .steps ul li.step2 {
@@ -829,6 +830,9 @@ h2 {
   #bghero {
     background-size: 100% auto; } }
 @media (min-width: 600px) {
+  .cidade {
+    display: block; }
+
   #gps-bar {
     display: none; }
 
@@ -836,7 +840,7 @@ h2 {
     background: url("../images/bg-hero.jpg") no-repeat;
     background-size: auto 100%;
     margin: 0;
-    padding: 20px 0 100px; }
+    padding: 20px 0 150px; }
     .home .wrapper.conversivel {
       background-color: #1183e4;
       position: fixed;
@@ -877,20 +881,58 @@ h2 {
     display: block; }
 
   .depoimentos {
-    display: block; } }
-@media (min-width: 801px) {
+    display: block; }
+
   .steps ul {
     display: block; }
-    .steps ul li {
-      margin-right: 2%; }
 
-  .cidade {
-    display: block; } }
+  .steps ul li {
+    padding: 18px 18px 18px 220px;
+    width: 100%;
+    height: auto;
+    text-align: left; }
+    .steps ul li.step1 {
+      background: url("../images/doctor2.png") no-repeat #fff 1% center; }
+    .steps ul li.step2 {
+      background: url("../images/calendar2.png") no-repeat #fff 1% center; }
+    .steps ul li.step3 {
+      background: url("../images/call2.png") no-repeat #fff 1% center;
+      margin: 0; } }
+@media (min-width: 801px) {
+  .steps ul li {
+    margin-right: 2%; } }
 @media (min-width: 1025px) {
   .home {
     background-size: 100% auto; }
 
-  .steps ul li {
-    margin-right: 3%; } }
+  .steps ul {
+    padding: 0 3%;
+    width: 100%;
+    margin: 20px 0 10px 0;
+    text-align: center; }
+    .steps ul li {
+      content: " ";
+      display: inline-block;
+      vertical-align: center;
+      margin: 0 3% 20px 0;
+      background: #fff;
+      padding: 140px 18px 18px 18px;
+      width: 31%;
+      color: #1183e4;
+      vertical-align: top;
+      height: 270px;
+      text-align: center;
+      box-shadow: 0px 2px 2px #999; }
+      .steps ul li.step1 {
+        background: url("../images/doctor2.png") no-repeat #fff center 10%; }
+      .steps ul li.step2 {
+        background: url("../images/calendar2.png") no-repeat #fff center 10%; }
+      .steps ul li.step3 {
+        background: url("../images/call2.png") no-repeat #fff center 10%;
+        margin: 0; }
+      .steps ul li p {
+        margin-top: 10px;
+        color: #666;
+        width: 100%; } }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */ }

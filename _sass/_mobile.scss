@@ -30,12 +30,13 @@
 
 //portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
 @media (min-width:600px) {
+  .cidade{ display: block;}
   #gps-bar{ display: none;}
   .home{
     background: url("../images/bg-hero.jpg") no-repeat;
     background-size: auto 100%;
     margin: 0;
-    padding: 20px 0 100px;
+    padding: 20px 0 150px;
     .wrapper.conversivel{
       background-color: #1183e4;
       position: fixed;
@@ -68,20 +69,55 @@
   .logo-desktop{display: block;}
   .porque-umed{display: block;}
   .depoimentos{ display: block;}
+  .steps ul{ display: block;}
+  .steps ul li{
+    padding: 18px 18px 18px 220px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    &.step1{ background: url("../images/doctor2.png") no-repeat #fff 1% center;}
+    &.step2{ background: url("../images/calendar2.png") no-repeat #fff 1% center;}
+    &.step3{ background: url("../images/call2.png") no-repeat #fff 1% center; margin:0 ;}
+  }
 }
 
 
 @media (min-width:801px) {
   .steps ul{
-    display: block;
     li { margin-right: 2%;}
   }
-  .cidade{ display: block;;}
 }
 @media (min-width:1025px) {
   .home{
     background-size: 100% auto;
   }
-  .steps ul li { margin-right: 3%;}
+  .steps ul{
+  padding:0 3%;
+  width: 100%;
+  margin:20px 0 10px 0;
+  text-align: center;
+  li{
+    content: " ";
+    display: inline-block;
+    vertical-align: center;
+    margin: 0 3% 20px 0;
+    background: #fff;
+    padding: 140px 18px 18px 18px;
+    width: 31%;
+    color: #1183e4;
+    vertical-align: top;
+    height: 270px;
+    text-align: center;
+    box-shadow: 0px 2px 2px #999;
+    &.step1{ background: url("../images/doctor2.png") no-repeat #fff center 10%;}
+    &.step2{ background: url("../images/calendar2.png") no-repeat #fff center 10%;}
+    &.step3{ background: url("../images/call2.png") no-repeat #fff center 10%; margin:0;}
+    p{
+      margin-top: 10px;
+      color: #666;
+      width: 100%;
+    }
+  }
+}
 }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }

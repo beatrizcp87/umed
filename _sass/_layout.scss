@@ -345,6 +345,7 @@ h2{
   width: 100%;
   margin:20px 0 10px 0;
   text-align: center;
+  background-position: center 10%;
   li{
     content: " ";
     display: inline-block;
@@ -361,7 +362,7 @@ h2{
     &.step1{ background: url("../images/doctor2.png") no-repeat #fff;}
     &.step2{ background: url("../images/calendar2.png") no-repeat #fff;}
     &.step3{ background: url("../images/call2.png") no-repeat #fff; margin:0;}
-    background-position: center 10% !important;
+    background-position: center 10%;
     p{
       margin-top: 10px;
       color: #666;
