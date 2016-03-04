@@ -601,34 +601,40 @@ a.buscar {
   padding: 0; }
 
 h2 {
-  margin: 20px 0 30px;
+  margin: 0;
   font-weight: bold;
   color: #1183e4;
-  font-size: 30px; }
+  font-size: 22px; }
 
 .steps ul {
-  padding: 0;
-  width: 50%; }
+  padding: 0 3%;
+  width: 100%;
+  margin: 0 0 10px 0;
+  text-align: center; }
   .steps ul li {
     content: " ";
-    display: block;
+    display: inline-block;
     vertical-align: center;
-    margin: 0 0 10px;
+    margin: 0 3% 100px 0;
     background: #fff;
-    padding: 18px;
-    width: 90%;
+    padding: 140px 18px 18px 18px;
+    width: 31%;
     color: #1183e4;
     vertical-align: top;
-    background-position: 95% center !important; }
+    height: 270px;
+    text-align: center;
+    background-position: center 10% !important; }
     .steps ul li.step1 {
-      background: url("../images/doctor.png") no-repeat #fff; }
+      background: url("../images/doctor2.png") no-repeat #fff; }
     .steps ul li.step2 {
-      background: url("../images/calendar.png") no-repeat #fff; }
+      background: url("../images/calendar2.png") no-repeat #fff; }
     .steps ul li.step3 {
-      background: url("../images/call.png") no-repeat #fff;
+      background: url("../images/call2.png") no-repeat #fff;
       margin: 0; }
     .steps ul li p {
-      width: 72%; }
+      margin-top: 10px;
+      color: #666;
+      width: 100%; }
 
 /**
  * Syntax highlighting styles
