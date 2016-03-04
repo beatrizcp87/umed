@@ -1,7 +1,10 @@
 // smartphones, portrait iPhone, portrait 480x320 phones (Android)
 @media (min-width:320px) {
+  .steps ul{ display: none;}
   .logo-desktop{display: none;}
   .porque-umed{display: none;}
+  .depoimentos{ display: none;}
+  .cidade{ display: none;}
  }
 
 
@@ -30,10 +33,10 @@
   #gps-bar{ display: none;}
   .home{
     background: url("../images/bg-hero.jpg") no-repeat;
-    background-size: 100% auto;
+    background-size: auto 100%;
     margin: 0;
-    padding: 20px 0 0;
-    .wrapper{
+    padding: 20px 0 100px;
+    .wrapper.conversivel{
       background-color: #1183e4;
       position: fixed;
       bottom: 0;
@@ -61,9 +64,21 @@
   #bghero{ display: none;}
   .logo-desktop{display: block;}
   .porque-umed{display: block;}
+  .depoimentos{ display: block;}
 }
 
 
-@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:801px) {
+  .steps ul{
+    display: block;
+    li { margin-right: 2%;}
+  }
+  .cidade{ display: block;;}
+}
+@media (min-width:1025px) {
+  .home{
+    background-size: 100% auto;
+  }
+  .steps ul li { margin-right: 3%;}
+}
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }

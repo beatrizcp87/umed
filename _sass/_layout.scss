@@ -348,7 +348,7 @@ h2{
     content: " ";
     display: inline-block;
     vertical-align: center;
-    margin: 0 3% 100px 0;
+    margin: 0 3% 20px 0;
     background: #fff;
     padding: 140px 18px 18px 18px;
     width: 31%;
@@ -365,6 +365,30 @@ h2{
       color: #666;
       width: 100%;
     }
+  }
+}
+
+.depoimentos{
+  color: #fff;
+  text-align: center;
+  font-size:16px;
+  margin-top: 40px;
+  span{
+    display: block;
+    &.depo{ font-style: italic;}
+    &.autor{ font-size: 14px;  font-weight: 600;}
+  }
+}
+
+.cidade{
+  width: calc(100% - 340px);
+  float: right;
+  margin: 50px 40px 0 0 ;
+  select{
+    min-width: 100% !important;
+    display:  block;
+    font-size: 30px;
+    padding: 20px 30px;
   }
 }
 

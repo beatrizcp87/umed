@@ -615,7 +615,7 @@ h2 {
     content: " ";
     display: inline-block;
     vertical-align: center;
-    margin: 0 3% 100px 0;
+    margin: 0 3% 20px 0;
     background: #fff;
     padding: 140px 18px 18px 18px;
     width: 31%;
@@ -635,6 +635,29 @@ h2 {
       margin-top: 10px;
       color: #666;
       width: 100%; }
+
+.depoimentos {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 40px; }
+  .depoimentos span {
+    display: block; }
+    .depoimentos span.depo {
+      font-style: italic; }
+    .depoimentos span.autor {
+      font-size: 14px;
+      font-weight: 600; }
+
+.cidade {
+  width: calc(100% - 340px);
+  float: right;
+  margin: 50px 40px 0 0; }
+  .cidade select {
+    min-width: 100% !important;
+    display: block;
+    font-size: 30px;
+    padding: 20px 30px; }
 
 /**
  * Syntax highlighting styles
@@ -778,10 +801,19 @@ h2 {
     color: #099; }
 
 @media (min-width: 320px) {
+  .steps ul {
+    display: none; }
+
   .logo-desktop {
     display: none; }
 
   .porque-umed {
+    display: none; }
+
+  .depoimentos {
+    display: none; }
+
+  .cidade {
     display: none; } }
 @media (min-width: 480px) {
   .logo {
@@ -802,10 +834,10 @@ h2 {
 
   .home {
     background: url("../images/bg-hero.jpg") no-repeat;
-    background-size: 100% auto;
+    background-size: auto 100%;
     margin: 0;
-    padding: 20px 0 0; }
-    .home .wrapper {
+    padding: 20px 0 100px; }
+    .home .wrapper.conversivel {
       background-color: #1183e4;
       position: fixed;
       bottom: 0;
@@ -838,10 +870,23 @@ h2 {
     display: block; }
 
   .porque-umed {
+    display: block; }
+
+  .depoimentos {
     display: block; } }
 @media (min-width: 801px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  .steps ul {
+    display: block; }
+    .steps ul li {
+      margin-right: 2%; }
+
+  .cidade {
+    display: block; } }
 @media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */ }
+  .home {
+    background-size: 100% auto; }
+
+  .steps ul li {
+    margin-right: 3%; } }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */ }
