@@ -270,16 +270,25 @@
   background-position: center center;
   text-align: center;
 }
-
-.logo{
+.logo,
+.logo-desktop{
+  background: url("../images/big-logo.png") no-repeat;
   content: " ";
+  display: block;
+}
+.logo{
+  margin-top: 40px;
   width: 100%;
   height: 160px;
-  margin-top: 40px;
   position: absolute;
-  display: block;
-  background: url("../images/big-logo.png") no-repeat;
   background-size: 100% auto;
+}
+
+.logo-desktop{
+  width: 300px;
+  height: 180px;
+  background-size: 120% auto;
+  background-position: center center;
 }
 
 .basic-box{
@@ -316,4 +325,42 @@ a.buscar{
     background-color: #af7114;
   }
 }
+
+.home{
+  margin:0;
+  padding:0;
+}
+
+h2{
+  margin: 20px 0 30px;
+  font-weight: bold;
+  color: #1183e4;
+  font-size: 30px;
+}
+
+
+.steps ul{
+  padding:0;
+  width: 50%;
+  li{
+    content: " ";
+    display: block;
+    vertical-align: center;
+    margin: 0 0 10px;
+    background: #fff;
+    padding: 18px;
+    width: 90%;
+    color: #1183e4;
+    vertical-align: top;
+    &.step1{ background: url("../images/doctor.png") no-repeat #fff;}
+    &.step2{ background: url("../images/calendar.png") no-repeat #fff;}
+    &.step3{ background: url("../images/call.png") no-repeat #fff; margin:0;}
+    background-position: 95% center !important;
+    p{
+      width: 72%;
+    }
+  }
+}
+
+
 
