@@ -266,7 +266,8 @@
   height: 240px;
   display: block;
   background: url("../images/bg-hero.jpg") no-repeat;
-  background-size: 100% auto;
+  background-size: auto 120%;
+  background-position: center center;
   text-align: center;
 }
 
