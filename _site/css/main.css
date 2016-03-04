@@ -53,20 +53,29 @@ input,
 select {
   display: block;
   font-family: "Roboto", sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  box-shadow: none;
+  border: 1px solid #d5dadf;
+  min-width: 100%;
+  padding: 2px;
+  color: #999;
+  border-radius: 3px; }
+
+select {
+  background: url("../images/select-arrow.png") no-repeat;
+  background-position: 98% center; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
 select[multiple] {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
-  transition: border-color 150ms ease;
   width: 100%; }
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
   select[multiple]:hover {
@@ -550,6 +559,13 @@ pre {
   display: block;
   width: 100%;
   margin-top: 15px; }
+  .basic-box span {
+    font-weight: 600;
+    color: #778ea7; }
+  .basic-box select {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 500; }
 
 /**
  * Syntax highlighting styles

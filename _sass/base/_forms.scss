@@ -22,21 +22,32 @@ select {
   display: block;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  box-shadow: none;
+  border: 1px solid #d5dadf;
+  min-width: 100%;
+  padding: 2px;
+  color: #999;
+  border-radius: 3px;
+}
+
+select{
+  background: url("../images/select-arrow.png") no-repeat;
+  background-position: 98% center;
 }
 
 #{$all-text-inputs},
 select[multiple] {
   background-color: $base-background-color;
   border: $base-border;
-  border-radius: $base-border-radius;
-  box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: $small-spacing;
   padding: $base-spacing / 3;
-  transition: border-color $base-duration $base-timing;
   width: 100%;
+
 
   &:hover {
     border-color: shade($base-border-color, 20%);
