@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://umed.com.br/">
   <link rel="alternate" type="application/rss+xml" title="UMED" href="http://umed.com.br/feed.xml">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 
 
@@ -61,7 +62,7 @@
 
 
     <div class="page-content">
-        <div class="home">
+        <div id="home" class="home" >
   <div id="bghero">
     <div class="logo"></div>
   </div>
@@ -128,6 +129,15 @@
 
 
 </div>
+
+<script type="text/javascript">
+  $(function(){
+      $('#home').css({'height':($(document).height())+'px'});
+      $(window).resize(function(){
+          $('#home').css({'height':($(document).height())+'px'});
+      });
+  });
+</script>
 
     </div>
 

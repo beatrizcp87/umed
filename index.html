@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="home">
+<div id="home" class="home" >
   <div id="bghero">
     <div class="logo"></div>
   </div>
@@ -68,3 +68,12 @@ layout: default
 
 
 </div>
+
+<script type="text/javascript">
+  $(function(){
+      $('#home').css({'height':($(document).height())+'px'});
+      $(window).resize(function(){
+          $('#home').css({'height':($(document).height())+'px'});
+      });
+  });
+</script>
