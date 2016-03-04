@@ -504,45 +504,15 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
-#gps-bar {
-  background: #31404c;
-  color: #fff;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  margin: 0 auto;
-  padding: 2px 8px;
-  min-height: 30px; }
-  #gps-bar span {
-    font-weight: thin;
-    font-size: 14px;
-    padding-top: -2px; }
-  #gps-bar span::before {
-    content: " ";
-    width: 15px;
-    height: 15px;
-    margin-right: 8px;
-    display: inline-block;
-    background: url("../images/gps_fixed.svg") no-repeat;
-    vertical-align: middle; }
-  #gps-bar .float {
-    content: " ";
-    width: 15px;
-    height: 15px;
-    margin-right: 8px;
-    margin-top: 2px;
-    display: block;
-    float: right;
-    background: url("../images/arrow.png") no-repeat; }
+.home {
+  margin: 0;
+  padding: 0; }
 
-#bghero {
-  width: 100%;
-  height: 240px;
-  display: block;
-  background: url("../images/bg-hero.jpg") no-repeat;
-  background-size: auto 120%;
-  background-position: center center;
-  text-align: center; }
+h2 {
+  color: #1183e4;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0; }
 
 .logo,
 .logo-desktop {
@@ -551,79 +521,87 @@ pre {
   display: block; }
 
 .logo {
-  margin-top: 40px;
-  width: 100%;
+  background-size: 100% auto;
   height: 160px;
+  margin-top: 40px;
   position: absolute;
-  background-size: 100% auto; }
+  width: 100%; }
 
 .logo-desktop {
-  width: 300px;
-  height: 180px;
+  background-position: center center;
   background-size: 120% auto;
-  background-position: center center; }
+  height: 180px;
+  width: 300px; }
 
-.basic-box {
-  background: #fff;
-  padding: 15px 15px;
-  display: block;
-  width: 100%;
-  margin-top: 15px;
-  box-shadow: 0px 1px 2px #999; }
-  .basic-box span {
-    font-weight: 600;
-    color: #778ea7; }
-  .basic-box select {
-    margin-top: 5px;
-    margin-bottom: 0;
-    font-weight: 500; }
-
-a.buscar {
-  margin-top: 15px;
-  width: 100%;
+#gps-bar {
+  background: #31404c;
   color: #fff;
-  background-color: #ff9800;
-  text-align: center;
-  padding: 17px 20px;
-  display: block;
-  text-transform: uppercase;
-  font-size: 24px;
-  border-radius: 4px;
-  box-shadow: 0 5px 0 0 #af7114; }
-  a.buscar:hover {
-    text-decoration: none;
-    background-color: #af7114; }
-
-.home {
-  margin: 0;
-  padding: 0; }
-
-h2 {
-  margin: 0;
-  font-weight: bold;
-  color: #1183e4;
-  font-size: 22px; }
-
-.steps ul {
-  padding: 0 3%;
-  width: 100%;
-  margin: 20px 0 10px 0;
-  text-align: center;
-  background-position: center 10%; }
-  .steps ul li {
+  margin: 0 auto;
+  min-height: 30px;
+  padding: 2px 8px;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  #gps-bar span {
+    font-weight: thin;
+    font-size: 14px;
+    padding-top: -2px; }
+  #gps-bar span::before {
+    background: url("../images/gps_fixed.svg") no-repeat;
     content: " ";
     display: inline-block;
-    vertical-align: center;
-    margin: 0 3% 20px 0;
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
+    width: 15px; }
+  #gps-bar .float {
+    background: url("../images/arrow.png") no-repeat;
+    content: " ";
+    display: block;
+    float: right;
+    height: 15px;
+    margin-right: 8px;
+    margin-top: 2px;
+    width: 15px; }
+
+.cidade {
+  float: right;
+  margin: 50px 40px 0 0;
+  width: calc(100% - 340px); }
+  .cidade select {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    font-size: 30px;
+    min-width: 100% !important;
+    padding: 20px 30px; }
+
+#bghero {
+  background: url("../images/bg-hero.jpg") no-repeat center center;
+  background-size: auto 120%;
+  display: block;
+  height: 240px;
+  text-align: center;
+  width: 100%; }
+
+.steps ul {
+  background-position: center 10%;
+  margin: 20px 0 10px 0;
+  padding: 0 3%;
+  text-align: center;
+  width: 100%; }
+  .steps ul li {
     background: #fff;
-    padding: 140px 18px 18px 18px;
-    width: 31%;
-    color: #1183e4;
-    vertical-align: top;
-    height: 270px;
-    text-align: center;
     box-shadow: 0px 2px 2px #999;
-    background-position: center 10%; }
+    color: #1183e4;
+    content: " ";
+    display: inline-block;
+    height: 270px;
+    margin: 0 3% 20px 0;
+    padding: 140px 18px 18px 18px;
+    text-align: center;
+    vertical-align: center;
+    vertical-align: top;
+    width: 31%; }
     .steps ul li.step1 {
       background: url("../images/doctor2.png") no-repeat #fff; }
     .steps ul li.step2 {
@@ -632,15 +610,15 @@ h2 {
       background: url("../images/call2.png") no-repeat #fff;
       margin: 0; }
     .steps ul li p {
-      margin-top: 10px;
       color: #666;
+      margin-top: 10px;
       width: 100%; }
 
 .depoimentos {
   color: #fff;
-  text-align: center;
   font-size: 16px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  text-align: center; }
   .depoimentos span {
     display: block; }
     .depoimentos span.depo {
@@ -649,16 +627,36 @@ h2 {
       font-size: 14px;
       font-weight: 600; }
 
-.cidade {
-  width: calc(100% - 340px);
-  float: right;
-  margin: 50px 40px 0 0; }
-  .cidade select {
-    min-width: 100% !important;
-    display: block;
-    font-size: 30px;
-    padding: 20px 30px;
-    background-color: rgba(255, 255, 255, 0.5); }
+.basic-box {
+  background: #fff;
+  box-shadow: 0px 1px 2px #999;
+  display: block;
+  margin-top: 15px;
+  padding: 15px 15px;
+  width: 100%; }
+  .basic-box span {
+    color: #778ea7;
+    font-weight: 600; }
+  .basic-box select {
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 5px; }
+
+a.buscar {
+  background-color: #ff9800;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 0 #af7114;
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  margin-top: 15px;
+  padding: 17px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%; }
+  a.buscar:hover {
+    background-color: #af7114;
+    text-decoration: none; }
 
 /**
  * Syntax highlighting styles
