@@ -568,7 +568,8 @@ pre {
   padding: 15px 15px;
   display: block;
   width: 100%;
-  margin-top: 15px; }
+  margin-top: 15px;
+  box-shadow: 0px 1px 2px #999; }
   .basic-box span {
     font-weight: 600;
     color: #778ea7; }
@@ -606,7 +607,7 @@ h2 {
 .steps ul {
   padding: 0 3%;
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 20px 0 10px 0;
   text-align: center; }
   .steps ul li {
     content: " ";
@@ -620,6 +621,7 @@ h2 {
     vertical-align: top;
     height: 270px;
     text-align: center;
+    box-shadow: 0px 2px 2px #999;
     background-position: center 10% !important; }
     .steps ul li.step1 {
       background: url("../images/doctor2.png") no-repeat #fff; }
@@ -839,7 +841,8 @@ h2 {
       background-color: #1183e4;
       position: fixed;
       bottom: 0;
-      min-width: 100%; }
+      min-width: 100%;
+      box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5); }
 
   .basic-box, a.buscar {
     display: inline-block;
@@ -853,9 +856,10 @@ h2 {
 
   .basic-box {
     width: 34%;
-    margin: 0 2% 10px 0;
+    margin: 10px 2% 20px 0;
     background-color: transparent;
-    padding: 10px; }
+    padding: 10px;
+    box-shadow: none; }
     .basic-box span {
       color: #fff; }
     .basic-box select {
