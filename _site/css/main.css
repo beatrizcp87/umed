@@ -567,6 +567,22 @@ pre {
     margin-bottom: 0;
     font-weight: 500; }
 
+a.buscar {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  background-color: #ff9800;
+  text-align: center;
+  padding: 17px 20px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 0 #af7114; }
+  a.buscar:hover {
+    text-decoration: none;
+    background-color: #af7114; }
+
 /**
  * Syntax highlighting styles
  */
